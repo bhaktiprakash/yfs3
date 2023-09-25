@@ -52,7 +52,19 @@
                         </div>
                         <div class="mb-1">
                             <label for="">Confirm Password</label>
-                            <input type="password" name = "password2" class="form-control" required>
+                            <input type="password" name="password2" class="form-control" required>
+                        </div>
+                        <div class="mb-1 mx-auto">
+                            <input type="submit" value="SIGN-UP" class="w-btn w-100">
+                        </div>
+                        <br>
+                        <h5 class="text-center">Or</h5>
+                        <br>
+                        <div class="mb-1 d-flex justify-content-center">
+                            <a class="w-btn" href="{% provider_login_url "google" %}?next=/user/profile/">
+                                <span><img src="{% static "images/google-icon.png" %}" style="width:20px" alt=""></span>
+                                Sign In with Google
+                            </a>
                         </div>
                         <div class="mb-1">
                             <input type="submit" value ="SIGN-UP" class="w-btn w-100">
